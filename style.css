@@ -2,18 +2,26 @@
 body {
     margin: 0;
     font-family: "Yu Gothic", sans-serif;
-    background: #f4f6f8;
+    background: #fafafa;
     color: #333;
     line-height: 1.9;
 }
 
 /* HEADER */
 .site-header {
-    background: linear-gradient(135deg, #98d4bb, #7ac6a4);
+    background: linear-gradient(135deg, #ffb9d1, #a0e0ff, #b8f7c1);
     color: #fff;
-    padding: 60px 20px;
+    padding: 70px 20px;
     text-align: center;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    background-size: 300% 300%;
+    animation: headerGrad 10s ease infinite;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+@keyframes headerGrad {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .site-header h1 {
@@ -30,7 +38,7 @@ body {
 
 /* CONTAINER */
 .container {
-    max-width: 980px;
+    max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
 }
@@ -40,59 +48,68 @@ body {
     background: #ffffff;
     padding: 35px;
     margin-bottom: 30px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .section h2 {
     margin-top: 0;
     padding-left: 12px;
-    border-left: 5px solid #7ac6a4;
+    border-left: 6px solid #ff97c2;
+    font-size: 22px;
 }
 
-/* CARDS */
+/* LIST */
+.list li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+/* GRID CARDS */
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
 .spot-card {
-    background: #fafafa;
+    background: linear-gradient(135deg, #fff1f6, #ebfaff);
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 12px;
     border: 1px solid #e1e1e1;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
     transition: 0.25s;
 }
 
 .spot-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
 }
 
 /* RECOMMEND CARD */
 .recommend-card {
-    background: #eef8f3;
+    background: linear-gradient(135deg, #fff7fb, #e8fff1);
     padding: 25px;
-    border-radius: 10px;
-    border: 1px solid #cfeadb;
+    border-radius: 12px;
+    border: 1px solid #d8eadd;
 }
 
 /* BUTTON */
 .btn {
     display: inline-block;
-    background: #7ac6a4;
+    background: #ff97c2;
     color: #fff;
-    padding: 12px 20px;
-    border-radius: 6px;
+    padding: 14px 22px;
+    border-radius: 8px;
     text-decoration: none;
-    font-size: 15px;
-    margin-top: 12px;
+    font-size: 16px;
+    margin-top: 14px;
+    font-weight: bold;
     transition: 0.2s;
 }
 
 .btn:hover {
-    background: #5bb08b;
+    background: #ff7da9;
 }
 
 /* FAQ */
@@ -116,4 +133,20 @@ body {
     padding: 25px;
     font-size: 14px;
     color: #666;
+    margin-bottom: 30px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+    .site-header h1 {
+        font-size: 26px;
+    }
+    .section {
+        padding: 25px;
+    }
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 16px;
+    }
 }
