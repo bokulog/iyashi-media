@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: "Yu Gothic", sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.8;
+}
+
+.site-header {
+    background: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.site-header h1 {
+    font-size: 26px;
+    margin: 0;
+}
+
+.subtitle {
+    color: #777;
+    margin-top: 10px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.section {
+    background: #ffffff;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    border: 1px solid #e8e8e8;
+}
+
+.section h2 {
+    border-left: 5px solid #7ac6a4;
+    padding-left: 10px;
+    margin-top: 0;
+}
+
+.list li {
+    margin-bottom: 8px;
+}
+
+.card {
+    background: #fafafa;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 1px solid #e2e2e2;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.highlight {
+    border-left: 5px solid #7ac6a4;
+}
+
+.btn {
+    display: inline-block;
+    background: #7ac6a4;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.faq .qa {
+    margin-bottom: 15px;
+}
+
+.q {
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #888;
+    font-size: 14px;
+}
