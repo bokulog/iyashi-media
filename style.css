@@ -194,3 +194,78 @@ footer {
     transform: translateY(-4px);
 }
 
+
+/* ーーーーーーーーーーーーーー */
+/* スマホ表示 最適化               */
+/* ーーーーーーーーーーーーーー */
+
+@media screen and (max-width: 480px) {
+
+    body {
+        padding: 0 10px;
+        font-size: 15px;
+    }
+
+    .hero {
+        padding: 35px 15px;
+    }
+
+    .site-title {
+        font-size: 26px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+        margin-top: 6px;
+    }
+
+    /* ナビゲーション */
+    .global-nav ul {
+        gap: 14px;
+        padding: 8px 5px;
+        flex-wrap: wrap;
+    }
+
+    .global-nav a {
+        font-size: 14px;
+        padding: 4px 0;
+    }
+
+    /* カード */
+    .card {
+        padding: 18px 16px;
+        margin-bottom: 18px;
+        border-radius: 14px;
+    }
+
+    .card h2 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .card p {
+        line-height: 1.75;
+        font-size: 14.5px;
+    }
+
+    /* 記事一覧 */
+    .article-item {
+        padding: 14px;
+        border-radius: 14px;
+    }
+
+    .article-item h3 {
+        font-size: 17px;
+        margin-bottom: 6px;
+    }
+
+    .article-item p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .article-list {
+        gap: 16px;
+    }
+
+}
