@@ -12,21 +12,32 @@ body {
 
 .container {
     max-width: 900px;
-    margin: 32px auto 60px;
+    margin: 32px auto 70px;
     padding: 0 20px;
 }
 
 /* --------------------------------------------------
-   HEADER（行政サイト級の信頼感）
+   LOGO
+-------------------------------------------------- */
+.logo {
+    font-size: 18px;
+    font-weight: 700;
+    opacity: 0.95;
+    letter-spacing: 0.8px;
+    margin-bottom: 12px;
+}
+
+/* --------------------------------------------------
+   HEADER（行政・公的サイトの信頼感）
 -------------------------------------------------- */
 .site-header {
     background: linear-gradient(135deg, #4c8fff, #7db7ff);
-    padding: 78px 20px 85px;
+    padding: 80px 20px 95px;
     text-align: center;
     border-bottom-left-radius: 38px;
     border-bottom-right-radius: 38px;
     color: #fff;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 22px rgba(0,0,0,0.08);
 }
 
 .title {
@@ -44,11 +55,11 @@ body {
 }
 
 /* --------------------------------------------------
-   SECTION（本物のメディア構造）
+   SECTION（情報サイトの標準構造）
 -------------------------------------------------- */
 .section {
     background: #fff;
-    padding: 28px 25px;
+    padding: 30px 28px;
     margin-bottom: 32px;
     border-radius: 14px;
     border: 1px solid #dfe6ef;
@@ -65,7 +76,7 @@ body {
 }
 
 /* --------------------------------------------------
-   TEXT（読みやすさ最適化）
+   TEXT（情報サイトの読みやすさ基準）
 -------------------------------------------------- */
 .section p {
     font-size: 15.8px;
@@ -87,7 +98,7 @@ body {
 }
 
 /* --------------------------------------------------
-   LIST（情報サイト式）
+   LIST
 -------------------------------------------------- */
 .list li {
     margin-bottom: 10px;
@@ -96,7 +107,7 @@ body {
 }
 
 /* --------------------------------------------------
-   GRID（スポットカード）
+   GRID（スポット紹介）
 -------------------------------------------------- */
 .card-grid {
     display: grid;
@@ -126,11 +137,11 @@ body {
 }
 
 /* --------------------------------------------------
-   RECOMMEND（公式案内風）
+   RECOMMEND（サービス紹介枠）
 -------------------------------------------------- */
 .recommend-card {
     background: #f6f9ff;
-    padding: 22px;
+    padding: 24px;
     border-radius: 14px;
     border: 1px solid #d9e4f7;
 }
@@ -142,7 +153,7 @@ body {
 }
 
 /* --------------------------------------------------
-   BUTTON（行政・法人サイト調）
+   BUTTON（企業系サイトデザイン）
 -------------------------------------------------- */
 .btn {
     display: inline-block;
@@ -153,7 +164,7 @@ body {
     text-decoration: none;
     margin-top: 16px;
     font-weight: 700;
-    transition: 0.2s;
+    transition: 0.3s ease;
     font-size: 15px;
 }
 
@@ -168,12 +179,23 @@ body {
     font-weight: 700;
     color: #2f5b9d;
     font-size: 16px;
+    margin-bottom: 6px;
 }
 
 .a {
     margin-bottom: 20px;
     color: #3d3d3d;
     font-size: 15px;
+    line-height: 1.75;
+}
+
+/* --------------------------------------------------
+   ABOUT・POLICY用フッターテキスト
+-------------------------------------------------- */
+.about-footer {
+    font-size: 14px;
+    opacity: 0.85;
+    margin-top: 18px;
 }
 
 /* --------------------------------------------------
@@ -181,13 +203,13 @@ body {
 -------------------------------------------------- */
 .footer {
     text-align: center;
-    padding: 40px 0;
+    padding: 40px 0 50px;
     font-size: 12.5px;
     color: #78879c;
 }
 
 /* --------------------------------------------------
-   ANIMATION（専門サイト風・控えめ）
+   ANIMATION（行政サイトでも通る控えめ上品な動き）
 -------------------------------------------------- */
 .reveal {
     opacity: 0;
@@ -202,11 +224,12 @@ body {
 }
 
 /* --------------------------------------------------
-   RESPONSIVE（スマホ強化）
+   RESPONSIVE（スマホ最適化）
 -------------------------------------------------- */
 @media (max-width: 540px) {
     .title { font-size: 25px; }
-    .section { padding: 22px 16px; }
+    .section { padding: 24px 18px; }
     .spot-card { padding: 16px; }
     .section p { font-size: 15.3px; }
+    .logo { font-size: 16px; margin-bottom: 8px; }
 }
