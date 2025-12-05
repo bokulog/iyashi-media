@@ -269,3 +269,121 @@ footer {
     }
 
 }
+
+/* ーーーーーーーーーーーーーー */
+/* ポップ・かわいいデザイン強化   */
+/* ーーーーーーーーーーーーーー */
+
+body {
+    background: #fdfbff;
+    font-family: "Hiragino Sans", "Meiryo", sans-serif;
+    color: #555;
+}
+
+/* 見出しスタイル */
+.card h2 {
+    font-size: 20px;
+    border-left: 5px solid #ffa6c9;
+    padding-left: 10px;
+    margin-bottom: 14px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* カードデザインをより柔らかく */
+.card {
+    background: #ffffff;
+    padding: 22px 20px;
+    margin-bottom: 22px;
+    border-radius: 18px;
+    border: 1px solid #ffe3ed;
+    box-shadow: 0 4px 10px rgba(255, 180, 180, 0.15);
+}
+
+/* ナビゲーションを丸ボタン風 */
+.global-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 0;
+    flex-wrap: wrap;
+}
+
+.global-nav a {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #ffe9f1;
+    border-radius: 20px;
+    border: 1px solid #ffccd9;
+    font-size: 14px;
+    font-weight: bold;
+    color: #d14b7b;
+    transition: 0.2s;
+}
+
+.global-nav a:hover {
+    background: #ffd3e2;
+    transform: translateY(-2px);
+}
+
+/* 記事カードをポップに */
+.article-item {
+    background: #fff6fa;
+    border: 1px solid #ffd4e5;
+    padding: 18px;
+    border-radius: 16px;
+    transition: 0.25s;
+}
+
+.article-item:hover {
+    background: #ffe9f3;
+    transform: translateY(-4px);
+}
+
+.article-item h3 {
+    color: #d14b7b;
+    margin-bottom: 6px;
+    font-size: 17px;
+}
+
+/* hero セクションの優しいパステル化 */
+.hero {
+    background: linear-gradient(135deg, #cbe7ff, #ffd4e8);
+    color: #4a4a4a;
+    text-align: center;
+    padding: 45px 15px;
+    border-radius: 0 0 18px 18px;
+}
+
+.site-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
+
+.subtitle {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* 小見出し h3 */
+.card h3 {
+    color: #dd6b99;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+/* 文章行間を広げて読みやすく */
+.card p {
+    line-height: 1.8;
+}
+
+/* footer を柔らかく */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #999;
+    font-size: 13px;
+}
+
+
